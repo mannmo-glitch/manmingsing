@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>联系我们 | 万铭诚物流科技</title>
+    <meta name="description" content="联系万铭诚物流科技获取中港物流报价、路线咨询、报关清关及仓储配送方案。">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img data-bind="brand.logo" src="assets/logo-mark.jpg" alt="万铭诚物流科技 Logo"><span data-text="brand.name">万铭诚物流科技</span></a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="services.html">服务</a>
+        <a href="about.html">关于我们</a>
+        <a aria-current="page" href="contact.html">联系我们</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Contact</p>
+        <h1>获取中港物流方案</h1>
+        <p>留下货物资料，团队会按路线、车型、报关与仓储需求回复报价。</p>
+      </section>
+      <section class="contact-layout">
+        <form class="inquiry-form" id="inquiryForm">
+          <label>公司/姓名<input name="name" autocomplete="name" required></label>
+          <label>联系电话<input name="phone" autocomplete="tel" required></label>
+          <label>起运地<input name="origin" placeholder="例如：深圳宝安"></label>
+          <label>目的地<input name="destination" placeholder="例如：香港屯门"></label>
+          <label>服务需求<select name="service"><option>中港吨车 / 拖车运输</option><option>大件货运输</option><option>快件散拼车</option><option>仓储配送</option><option>代理报关清关</option></select></label>
+          <label class="full">货物资料<textarea name="message" rows="5" placeholder="货名、件数、重量、尺寸、时效、是否需要清关"></textarea></label>
+          <button class="btn primary full" type="submit">发送询盘</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact-panel">
+          <h2>联系方式</h2>
+          <dl>
+            <dt>深圳电话</dt><dd><a href="tel:075526838370" data-text="brand.phoneCn">0755-26838370</a></dd>
+            <dt>香港手提</dt><dd><a href="tel:0085291480909" data-text="brand.phoneHk">00852-91480909</a></dd>
+            <dt>深圳地址</dt><dd data-text="contact.addressCn"></dd>
+            <dt>香港办公室</dt><dd data-text="contact.addressHk"></dd>
+            <dt>香港仓库</dt><dd data-text="contact.warehouseHk"></dd>
+          </dl>
+          <div class="wechat-box">
+            <img data-bind="contact.wechatQr" src="assets/wechat-qr-new.jpeg" alt="微信客服二维码">
+            <span data-text="brand.wechatLabel">微信客服</span>
+          </div>
+          <div class="map-actions">
+            <a class="btn ghost" target="_blank" rel="noreferrer" data-map="amap" href="#">高德地图</a>
+            <a class="btn ghost" target="_blank" rel="noreferrer" data-map="baidu" href="#">百度地图</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div><strong data-text="brand.name">万铭诚物流科技</strong><p data-text="brand.tagline"></p></div>
+      <div class="footer-contact"><a href="faq.html">常见问题</a></div>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

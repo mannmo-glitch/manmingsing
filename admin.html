@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>内容管理 | 万铭诚物流科技</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img src="assets/logo-mark.jpg" alt="万铭诚物流科技 Logo"><span>万铭诚物流科技</span></a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="index.html">返回网站</a>
+        <button class="nav-save-button" id="editCms" type="button">更改內容</button>
+        <button class="nav-save-button" id="saveCms" type="button" hidden>儲存</button>
+        <button class="nav-cancel-button" id="cancelCms" type="button" hidden>取消</button>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">CMS</p>
+        <h1>网站内容管理后台</h1>
+        <p>修改品牌资料、首页内容、服务项目、联系资料及 FAQ，并保存到网站内容档。</p>
+      </section>
+
+      <section class="cms-shell">
+        <aside class="cms-sidebar" aria-label="后台分页">
+          <button class="active" type="button" data-cms-tab="brand">品牌资料</button>
+          <button type="button" data-cms-tab="home">首页内容</button>
+          <button type="button" data-cms-tab="services">服务项目</button>
+          <button type="button" data-cms-tab="about">关于我们</button>
+          <button type="button" data-cms-tab="contact">联系资料</button>
+          <button type="button" data-cms-tab="faq">FAQ</button>
+        </aside>
+
+        <section class="cms-workspace">
+          <div class="cms-toolbar">
+            <div>
+              <h2 id="cmsTitle">品牌资料</h2>
+              <p id="cmsHint">管理网站名称、电话、电邮、Logo 与公司名称。</p>
+            </div>
+          </div>
+
+          <div class="cms-warning" id="cmsServerWarning" hidden>
+            现在以 file:// 或普通静态模式开启，自动保存需要使用本地 CMS server。
+          </div>
+
+          <form class="cms-form" id="cmsForm">
+            <section class="cms-panel active" data-cms-panel="brand"></section>
+            <section class="cms-panel" data-cms-panel="home"></section>
+            <section class="cms-panel" data-cms-panel="services"></section>
+            <section class="cms-panel" data-cms-panel="about"></section>
+            <section class="cms-panel" data-cms-panel="contact"></section>
+            <section class="cms-panel" data-cms-panel="faq"></section>
+          </form>
+          <p class="form-status" id="cmsStatus" role="status"></p>
+        </div>
+      </section>
+    </main>
+    <script src="assets/cms-admin.js"></script>
+  </body>
+</html>
